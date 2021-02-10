@@ -11,6 +11,10 @@ describe('Logger Tests', () => {
     expect(typeof logger.info).toBe('function');
     expect(typeof logger.warn).toBe('function');
     expect(typeof logger.error).toBe('function');
+    expect(typeof logger.time).toBe('function');
+    expect(typeof logger.timeLog).toBe('function');
+    expect(typeof logger.timeEnd).toBe('function');
+    expect(typeof logger.count).toBe('function');
   });
   it('logger debug function', () => {
     global.console = { debug: jest.fn() };
